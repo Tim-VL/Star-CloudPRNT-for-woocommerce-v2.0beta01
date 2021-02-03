@@ -199,14 +199,14 @@
 		$printer->add_text_line(star_cloudprnt_get_column_separated_data(
 			array(
 				"Order #".$order_number, 
-				date("{$date_format} {$time_format}", current_time('timestamp'))), 
+				//date("{$date_format} {$time_format}", current_time('timestamp'))), 
 				$selectedPrinter['columns']));
-		/*	Tv 03feb2021	Disable header info
+		//	Tv 03feb2021	Disable header info
 			// Print header info area
 			$printer->add_new_line(1);
-			$printer->add_text_line("Order Status: ".$order->get_status());
+			//	$printer->add_text_line("Order Status: ".$order->get_status());
 			$order_date = date("{$date_format} {$time_format}", $order->get_date_created()->getOffsetTimestamp());
-			$printer->add_text_line("Order Date: {$order_date}");	
+			//	$printer->add_text_line("Order Date: {$order_date}");	
 
 			if (isset($shipping_items['name']))
 			{
@@ -214,7 +214,6 @@
 				$printer->add_text_line("Shipping Method: ".$shipping_items['name']);
 			}
 			$printer->add_text_line("Payment Method: ".$order_meta['_payment_method_title'][0]);
-		*/
 	}
 
 	
