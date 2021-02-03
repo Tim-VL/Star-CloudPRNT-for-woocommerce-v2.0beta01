@@ -186,7 +186,7 @@
 		$printer->set_text_center_align();
 		$printer->set_font_magnification(2, 2);
 
-		// Printthe title - word wrapped (NOTE - php wordwrap() is not multi-byte aware, and definitely not half/full width character aware)
+		// Print the title - word wrapped (NOTE - php wordwrap() is not multi-byte aware, and definitely not half/full width character aware)
 		$printer->add_text_line(wordwrap($title_text, $selectedPrinter['columns']/2, "\n", true)); // Columns are divided by 2 because we are using double width characters.
 
 		// Reset text formatting
