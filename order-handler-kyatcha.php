@@ -199,7 +199,7 @@
 		$printer->add_text_line(star_cloudprnt_get_column_separated_data(
 			array(
 				"Order #".$order_number, 
-				//date("{$date_format} {$time_format}", current_time('timestamp'))), 
+				date("{$date_format} {$time_format}", current_time('timestamp'))), 
 				$selectedPrinter['columns']));
 		//	Tv 03feb2021	Disable header info
 			// Print header info area
